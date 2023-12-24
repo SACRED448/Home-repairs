@@ -1,32 +1,32 @@
 @font-face {
 	font-family: 'Roboto';
-	src: url(/fonts/Roboto-Regular.ttf) format('ttf');
+	src: url('/fonts/Roboto-Regular.ttf');
 	font-weight: 400;
 }
 
 @font-face {
 	font-family: 'Roboto';
-	src: url(/fonts/Roboto-Italic.ttf) format('ttf');
+	src: url('/fonts/Roboto-Italic.ttf');
 	font-style: italic;
 	font-weight: 400;
 }
 
 @font-face {
 	font-family: 'Roboto';
-	src: url(/fonts/Roboto-Bold.ttf) format('ttf');
+	src: url('/fonts/Roboto-Bold.ttf');
 	font-weight: 700;
 }
 
 
 @font-face {
 	font-family: 'Roboto';
-	src: url(/fonts/Roboto-Bold.ttf) format('ttf');
+	src: url('/fonts/Roboto-Bold.ttf');
 	font-weight: 700;
 }
 
 @font-face {
 	font-family: 'segoescript';
-	src: url(/fonts/segoescript.ttf) format('ttf');
+	src: url('/fonts/segoescript.ttf');
 	font-weight: 400;
 }
 
@@ -52,7 +52,7 @@ img {
 
 body {
 	height: 100%;
-	font-family: 'Roboto', 'segoescript', 'sans-serif';
+	font-family: "Roboto", 'segoescript', 'sans-serif';
 	background: #EBEEF6;
 }
 
@@ -73,6 +73,10 @@ h1, h2, h3, p, figure, ul {
 
 /* Написание своих стилей */
 
+.wrapper {
+
+}
+
 .header {
 	background: url("/img/background-header.png"), lightgray 50% / cover no-repeat;
 	box-shadow: 1920px 4px 0px 0px rgba(0, 0, 0, 0.10) inset;
@@ -80,7 +84,170 @@ h1, h2, h3, p, figure, ul {
 	height: 100vh;
 }
 
-.header-logo-img {
-	width: 70px;
-	height: 70px;
+.container {
+	padding: 47px 0 0 40px;
 }
+
+.header-logo {
+	font-size: 35px;
+	font-weight: 400;
+	letter-spacing: 8.75px;
+}
+
+.header-logo-text {
+	display: inline-block;
+}
+
+.header-logo-img {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+}
+
+.header-nav {
+	
+}
+
+.header-list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.header-list-item {
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 2.125px;
+}
+
+.header-link {
+
+}
+
+.header-text {
+
+}
+
+.main {
+
+}
+
+.our-works {
+
+}
+
+.section-title {
+
+}
+
+.our-works-title {
+
+}
+
+.our-works-list {
+
+}
+
+.our-works-item {
+
+}
+
+.our-works-item-title {
+
+}
+
+.our-works-item-descr {
+
+}
+
+.btn {
+
+}
+
+.our-works-item-button {
+
+}
+
+.purple-arrows {
+
+}
+
+.reviews {
+
+}
+
+.reviews-title {
+
+}
+
+.reviews-text {
+
+}
+
+.submit-your-application {
+
+}
+
+.submit-your-application-title {
+
+}
+
+.submit-your-application-title-2 {
+
+}
+
+.submit-your-application-text {
+
+}
+
+.submit-your-application-form {
+
+}
+
+.services {
+
+}
+
+.services-title {
+
+}
+
+.services-list {
+
+}
+
+.services-list-item {
+
+}
+
+.services-text {
+
+}
+
+.price {
+
+}
+
+.price-title {
+
+}
+
+.price-text {
+
+}
+
+.footer {
+
+}
+
+.footer-text {
+	color: #000;
+	font-family: Segoe Script;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 5.2px;
+}
+
