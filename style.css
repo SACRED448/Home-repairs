@@ -85,12 +85,20 @@ h1, h2, h3, p, figure, ul {
 }
 
 .container {
+	position: fixed;
 	padding: 47px 0 0 40px;
+	/* padding-bottom: 225px; */
+	
+}
+
+.container::after {
+	background-color: white;
+	transition: 0.5;
 }
 
 .header-logo {
 	display: inline-block;
-	margin: 0 308px 225px 0;
+	margin-right: 308px;
 }
 
 .header-logo-text {
@@ -130,7 +138,9 @@ h1, h2, h3, p, figure, ul {
 }
 
 .header-text {
-	max-width: 535px;
+	
+	padding-left: 47px;
+	max-width: 635px;
 	font-size: 40px;
 	font-weight: 400;
 	line-height: 87.2px;
