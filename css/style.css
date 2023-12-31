@@ -79,8 +79,14 @@ h1, h2, h3, p, figure, ul {
 }
 
 .horizontal-lines {
+  margin-bottom: 87px;
   height: 2px;
   background: #9CA7F3;
+}
+
+.blocks-img {
+  width: 72px;
+  height: 72px;
 }
 
 /* Написание своих стилей */
@@ -146,13 +152,12 @@ h1, h2, h3, p, figure, ul {
 
 }
 
-.our-works-logo-img {
-  width: 72px;
-  height: 72px;
+.our-works-hr {
+  width: 550px;
 }
 
-.our-works-hr {
-  width: 711.023px;
+.our-works-container {
+
 }
 
 .our-works-list {
@@ -160,15 +165,49 @@ h1, h2, h3, p, figure, ul {
 }
 
 .our-works-item {
+  display: inline-block;
+}
 
+.our-works-item2-background {
+  width: 700px;
+  height: 400px;
+  border-radius: 20px;
+  background: #F9F9F9;
+}
+
+.our-works-item-img {
+  width: 400px;
+  height: 350px;
 }
 
 .our-works-item-title {
-
+  text-align: center;
 }
 
 .our-works-item-descr {
+  position: relative;
+  left: 83px;
+  top: 2em;
+  font-size: 17px;
+  line-height: 41.047px;
+  letter-spacing: 1.25px;
+}
 
+.our-works-item-strong {
+  position: relative;
+  top: -0.4em;
+  display: block;
+  color: #2439F6;
+}
+
+.our-works-descr-3 {
+  left: 400px;
+  top: -7.6em;
+}
+
+.our-works-img {
+  width: 140px;
+  height: 100px;
 }
 
 .btn {
