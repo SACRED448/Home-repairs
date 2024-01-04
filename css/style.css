@@ -89,6 +89,11 @@ h1, h2, h3, p, figure, ul {
   height: 72px;
 }
 
+.btn {
+  border-radius: 30px;
+  background: rgba(36, 57, 246, 0.50);
+}
+
 /* Написание своих стилей */
 
 /* Header style */
@@ -166,18 +171,23 @@ h1, h2, h3, p, figure, ul {
 
 .our-works-item {
   display: inline-block;
+  width: 700px;
+  height: 500px;
+  border-radius: 30px;
+  background: url('/img/img-of-repair.png');
+  background-repeat: no-repeat;
 }
 
 .our-works-item2-background {
   width: 700px;
-  height: 400px;
+  height: 480px;
   border-radius: 20px;
   background: #F9F9F9;
 }
 
 .our-works-item-img {
-  width: 400px;
-  height: 350px;
+  width: 700px;
+  height: 450px;
 }
 
 .our-works-item-title {
@@ -206,16 +216,24 @@ h1, h2, h3, p, figure, ul {
 }
 
 .our-works-img {
+  display: inline-block;
+  position: relative;
+  padding: 5px;
+  top: -2em;
+  left: 5em;
   width: 140px;
   height: 100px;
 }
 
-.btn {
-
-}
-
 .our-works-item-button {
-
+  position: relative;
+  top: -1em;
+  left: 11em;
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+  border: none;
+  flex-shrink: 0;
 }
 
 .purple-arrows {
