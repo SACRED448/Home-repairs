@@ -150,7 +150,7 @@ h1, h2, h3, p, figure, ul {
 }
 
 .our-works {
-
+  align-items: center;
 }
 
 .our-works-title {
@@ -166,19 +166,22 @@ h1, h2, h3, p, figure, ul {
 }
 
 .our-works-list {
-
+  text-align: center;
 }
 
 .our-works-item {
   display: inline-block;
+  margin-right: 20px;
   width: 700px;
-  height: 500px;
+  height: 480px;
   border-radius: 30px;
   background: url('/img/img-of-repair.png');
   background-repeat: no-repeat;
 }
 
 .our-works-item2-background {
+  position: relative;
+  top: -30px;
   width: 700px;
   height: 480px;
   border-radius: 20px;
@@ -187,16 +190,17 @@ h1, h2, h3, p, figure, ul {
 
 .our-works-item-img {
   width: 700px;
-  height: 450px;
+  height: 480px;
 }
 
 .our-works-item-title {
   text-align: center;
+  font-size: 20px;
 }
 
 .our-works-item-descr {
   position: relative;
-  left: 83px;
+  left: 5em;
   top: 2em;
   font-size: 17px;
   line-height: 41.047px;
@@ -208,6 +212,10 @@ h1, h2, h3, p, figure, ul {
   top: -0.4em;
   display: block;
   color: #2439F6;
+}
+
+.our-works-images {
+
 }
 
 .our-works-descr-3 {
