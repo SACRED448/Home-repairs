@@ -52,7 +52,6 @@ img {
 
 body {
   color: #000;
-  /* font-size: 20px; */
   font-weight: 400;
   line-height: 53.02px;
   letter-spacing: 3.2px;
@@ -161,36 +160,43 @@ h1, h2, h3, p, figure, ul {
   width: 550px;
 }
 
-.our-works-container {
-
-}
-
 .our-works-list {
   text-align: center;
 }
 
+.our-works-item-container {
+  display: inline-flex;
+}
+
 .our-works-item {
-  display: inline-block;
-  margin-right: 20px;
+  display: inline-flex;
+  margin-right: 40px;
   width: 700px;
   height: 480px;
   border-radius: 30px;
-  background: url('/img/img-of-repair.png');
+}
+
+.our-works-item1-background {
+  background: url('../img/img-of-repair.png');
   background-repeat: no-repeat;
 }
 
 .our-works-item2-background {
-  position: relative;
-  top: -30px;
-  width: 700px;
-  height: 480px;
-  border-radius: 20px;
   background: #F9F9F9;
+  background-size: 100%;
+}
+
+.our-works-item3-background {
+  background: url('../img/work-before-after.png');
+  background-repeat: no-repeat;
+}
+
+.our-works-item-wrapper {
+  width: 100%;
 }
 
 .our-works-item-img {
-  width: 700px;
-  height: 480px;
+
 }
 
 .our-works-item-title {
@@ -199,18 +205,12 @@ h1, h2, h3, p, figure, ul {
 }
 
 .our-works-item-descr {
-  position: relative;
-  left: 5em;
-  top: 2em;
   font-size: 17px;
   line-height: 41.047px;
   letter-spacing: 1.25px;
 }
 
 .our-works-item-strong {
-  position: relative;
-  top: -0.4em;
-  display: block;
   color: #2439F6;
 }
 
@@ -219,26 +219,17 @@ h1, h2, h3, p, figure, ul {
 }
 
 .our-works-descr-3 {
-  left: 400px;
-  top: -7.6em;
+
 }
 
 .our-works-img {
-  display: inline-block;
-  position: relative;
-  padding: 5px;
-  top: -2em;
-  left: 5em;
+
   width: 140px;
   height: 100px;
 }
 
 .our-works-item-button {
-  position: relative;
-  top: -1em;
-  left: 11em;
-  width: 300px;
-  height: 40px;
+
   font-size: 20px;
   border: none;
   flex-shrink: 0;
