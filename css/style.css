@@ -192,6 +192,7 @@ h1, h2, h3, p, figure, ul {
 }
 
 .our-works-item-wrapper {
+  padding: 20px 24px 0 24px;
   width: 100%;
 }
 
@@ -200,39 +201,66 @@ h1, h2, h3, p, figure, ul {
 }
 
 .our-works-item-title {
+  padding-bottom: 40px;
   text-align: center;
   font-size: 20px;
 }
 
 .our-works-item-descr {
+  text-align: center;
   font-size: 17px;
-  line-height: 41.047px;
+  line-height: 34px;
   letter-spacing: 1.25px;
 }
 
 .our-works-item-strong {
+  display: block;
   color: #2439F6;
 }
 
-.our-works-images {
-
+.our-works-item-strong1 {
+  text-indent: 0.3em;
 }
 
-.our-works-descr-3 {
+.our-works-item-strong2 {
+ text-indent: -1.4em;
+}
 
+.our-works-item-strong3 {
+  text-indent: 0.3em;
+}
+
+.our-works-item-descr-block {
+  float: left;
+  padding-bottom: 30px;
+}
+
+.our-works-item-descr2 {
+  text-indent: 2.8em;
+}
+
+.our-works-item-descr3 {
+  float: right;
+}
+
+.our-works-images {
+  display: inline-block;
+  /* max-width: 500px; */
 }
 
 .our-works-img {
-
   width: 140px;
   height: 100px;
+  cursor: pointer;
 }
 
 .our-works-item-button {
-
+  padding: 0;
+  width: 300px;
+  height: 40px;
   font-size: 20px;
   border: none;
-  flex-shrink: 0;
+  cursor: pointer;
 }
 
 .purple-arrows {
