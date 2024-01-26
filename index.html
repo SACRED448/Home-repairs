@@ -77,7 +77,6 @@
                               Стоимость:
                               <strong class="our-works-item-strong our-works-item-strong3">2,5 млн.руб</strong>
                               </p>
-                              <!-- Добавить анимацию увеличения изображения, при наведении курсора -->
                               <div class="our-works-images">
                                 <img class="our-works-img" src="/img/our-works-1.png" alt="Ремонт №1">
                                 <img class="our-works-img" src="/img/our-works-2.png" alt="Ремонт №2">
@@ -89,17 +88,17 @@
                       </li>
                     </div>
                     <!-- Добавить слайдер до/после -->
-                      <li class="our-works-item our-works-item3-background"></li>
+                      <li class="our-works-item our-works-item3-background">
+                        <button class="our-works-purple-arrow-in-left"></button>
+                        <button class="our-works-purple-arrow-in-right"></button>
+                      </li>
                   </ul>
-                  <button class="purple-arrows">
-                    <img src="/img/purple arrow in left.svg" alt="Стрелка влево">
-                  </button>
-                  <button class="purple-arrows">
-                      <img src="/img/purple arrow in right.svg" alt="Стрелка вправо">
-                  </button>
-                  <button><img src="/img/arrow in left.svg" alt="#"></button>
-                  <p>Status bar<img src="/img/Ellipse 1.svg" alt="#"></p>
-                  <button><img src="/img/arrow in right.svg" alt="#"></button>
+
+                  <div class="arrows-and-status-bar">
+                    <button class="arrow-in-left"></button>
+                    <img class="status-bar" src="/img/Ellipse 1.svg" alt="status-bar">
+                    <button class="arrow-in-right"></button>
+                  </div>
             </section>
             <img src="/img/roller.png" alt="#">
             <section class="reviews">
