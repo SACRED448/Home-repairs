@@ -46,9 +46,11 @@ a {
 	text-decoration: none;
 }
 
-img {
+/* Из-за данной настройки, изображение растягивалось, а не изменялось при помощи слайдера */
+
+/* img {
 	max-width: 100%;
-}
+} */
 
 body {
   color: #000;
@@ -197,11 +199,11 @@ h1, h2, h3, p, figure, ul {
   background-size: 100%;
 }
 
-.our-works-item3-background {
+/* .our-works-item3-background {
   margin-bottom: 70px;
   background: url('../img/work-before-after.png');
   background-repeat: no-repeat;
-}
+} */
 
 .our-works-item-wrapper {
   padding: 20px 24px 0 24px;
@@ -283,12 +285,23 @@ h1, h2, h3, p, figure, ul {
   background-color: rgba(28,28,28,0);
 }
 
+.before-and-after {
+  text-align: center;
+}
+
+.imgages-before-after {
+  height: 480px;
+  width: 700px;
+  border-radius: 30px;
+}
+
 .our-works-purple-arrow-in-right {
   position: relative;
   padding: 0;
   left: 45em;
   top: 12em;
-  width: 48px;
+  left: 0;
+  width: 80px;
   height: 93px;
   background: url('../img/purple arrow in right.svg');
   background-repeat: no-repeat;
@@ -299,9 +312,9 @@ h1, h2, h3, p, figure, ul {
 .our-works-purple-arrow-in-left {
   position: relative;
   padding: 0;
-  left: -8em;
+  left: -43em;
   top: 12em;
-  width: 48px;
+  width: 80px;
   height: 93px;
   background: url('../img/purple arrow in left.svg');
   background-repeat: no-repeat;
