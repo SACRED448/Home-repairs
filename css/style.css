@@ -324,7 +324,8 @@ h1, h2, h3, p, figure, ul {
 }
 
 .black-arrows {
-  padding: 13px;
+  /* padding: 13px; */
+  margin-bottom: 154px;
   text-align: center;
 }
 
@@ -359,8 +360,23 @@ h1, h2, h3, p, figure, ul {
 
 /* Our works section end */
 
-.reviews {
+.img-roller-left {
+  width: 700px;
+  height: 250px;
+}
 
+/* Reviews section start */
+
+.reviews-hr {
+  width: 360px;
+}
+
+reviews-logo {
+  width: 200px;
+}
+
+.reviews {
+  margin-bottom: 300px;
 }
 
 .reviews-title {
@@ -369,6 +385,14 @@ h1, h2, h3, p, figure, ul {
 
 .reviews-text {
 
+}
+
+.img-roller-right {
+  display: block;
+  float: right;
+  width: 700px;
+  height: 250px;
+  margin-bottom: 200px;
 }
 
 .submit-your-application {
