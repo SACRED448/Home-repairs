@@ -110,6 +110,7 @@
             </section>
             <!-- Section our works end -->
 
+            <!-- Decoration -->
             <img class="img-roller-left" src="/img/roller.png" alt="#">
 
             <!-- Section reviews start -->
@@ -126,50 +127,61 @@
                     Создание блока с отзывами, будет позже))))
                 </p>
             </section>
-            <img class="img-roller-right" src="/img/roll on wall.png" alt="#">
+            <!-- Section reviews end -->
 
+            <!-- Decoration -->
+            <img class="img-roller-right" src="/img/roll on wall.png" alt="#">
             <img src="/img/Rectangle 1.png" alt="#">
+
+            <!-- Section user form start -->
             <section class="submit-your-application">
                 <h2 class="section-title submit-your-application-title">
                     Оставить заявку
+                <img class="blocks-img" src="/img/sumbit-your-application-logo.svg" alt="#">
                 </h2>
-                <img src="/img/sumbit-your-application-logo.svg" alt="#">
-                <hr>
+                <hr class="horizontal-lines submit-your-application-hr">
                 <h3 class="submit-your-application-title-2">
                     Оставьте зявку прямо сейчас!
                 </h3>
                 <p class="submit-your-application-text">
-                    Мы перевозним вам в ближайшее время.
+                    Мы перевозним вам в ближайшее время
                 </p>
-                <form action="" class="submit-your-application-form">
-                    <label>
+                <!-- Запретить вводить неккоректные данные в поля формы -->
+                <form class="user-form" action="">
+                    <label class="user-form-description-and-input">
                         Как вас зовут?*
+                        <input class="user-form-input" placeholder="Ваше имя" type="text">
                     </label>
-                    <input placeholder="Ваше имя" type="text">
-                    <label>
+                    <label class="user-form-description-and-input">
                         Ваш номер телефона?*
+                        <input class="user-form-input" pattern="/\+7\(\d{3}\)\d{3}-\d{2}-\d{2}/" placeholder="+7(___)___-__-__" type="tel">
                     </label>
-                    <input placeholder="+7(___)___-__-__" type="tel">
-                    <label>
+                    <label class="user-form-description-and-input">
                         Укажите тип ремонта*
+                        <select class="user-form-select" name="" id="">
+                          <option value="" disabled selected>Тип ремонта</option>
+                          <option value="">Капитальный</option>
+                          <option value="">Частичный</option>
+                          <option value="">Евро-ремонт</option>
+                        </select>
                     </label>
-                    <select name="" id="">
-                        <option value="" disabled selected>Тип ремонта</option>
-                        <option value="">Капитальный</option>
-                        <option value="">Частичный</option>
-                        <option value="">Евро-ремонт</option>
-                    </select>
-                    <label for="">
+                    <label class="user-form-description-and-input" for="">
                         Кол-во комнат в доме*
+                        <input class="user-form-input" placeholder="Количество комнат" type="text">
                     </label>
-                    <input placeholder="Количество комнат" type="text">
-                    <label for="">
-                        Площадь дома/квартиры*
+                    <label class="user-form-description-and-input" for="">
+                        Площадь дома/квартиры (м^2)*
+                        <input class="user-form-input" placeholder="S = ?" type="text">
                     </label>
-                    <input placeholder="S = ?" type="text">
+                    <button class="user-form-btn">Отправить заявку</button>
                 </form>
             </section>
+            <!-- Section user-form-end -->
+
+            <!-- Decoration -->
             <img src="/img/man.png" alt="">
+
+            <!-- Section services start -->
             <section class="services">
                 <h2 class="section-title services-title">
                     Услуги
