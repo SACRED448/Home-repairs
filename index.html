@@ -17,6 +17,7 @@
               <a href="#" class="header-logo">
                   <img src="/img/logo.svg" alt="#" class="header-logo-img">
               </a>
+              <!-- Добавить якори на навигацию -->
           <nav class="header-nav">
               <ul class="header-list">
                   <li class="header-list-item">
@@ -83,6 +84,7 @@
                               Стоимость:
                               <strong class="our-works-item-strong our-works-item-strong3">2,5 млн.руб</strong>
                               </p>
+                              <!-- Лупа при наведении на картинку, при нажатии должна увеличиваться фотография -->
                               <div class="our-works-images">
                                 <img class="our-works-img" src="/img/our-works-1.png" alt="Ремонт №1">
                                 <img class="our-works-img" src="/img/our-works-2.png" alt="Ремонт №2">
@@ -93,6 +95,7 @@
                            </div>
                       </li>
                     </div>
+                    <!-- Дописать функциональность для просмотра работ -->
                       <li class="our-works-item">
                         <div class="before-and-after">
                           <img class="imgages-before-after" src="./img/before.png" alt="#">
@@ -140,12 +143,17 @@
                 <img class="blocks-img" src="/img/sumbit-your-application-logo.svg" alt="#">
                 </h2>
                 <hr class="horizontal-lines submit-your-application-hr">
-                <h3 class="submit-your-application-title-2">
-                    Оставьте зявку прямо сейчас!
-                </h3>
-                <p class="submit-your-application-text">
-                    Мы перевозним вам в ближайшее время
-                </p>
+
+                <div class="submit-your-application-describe">
+                    <h3 class="submit-your-application-title-2">
+                        Оставьте зявку прямо сейчас!
+                    </h3>
+                    <!-- Увеличить шрифт -->
+                    <p class="submit-your-application-text">
+                        Мы перевозним вам в ближайшее время
+                    </p>
+                </div>
+
                 <!-- Запретить вводить неккоректные данные в поля формы -->
                 <form class="user-form" action="">
                     <label class="user-form-description-and-input">
@@ -185,47 +193,57 @@
             <section class="services">
                 <h2 class="section-title services-title">
                     Услуги
+                <img class="blocks-img" src="/img/services-logo.svg" alt="">
                 </h2>
-                <img src="/img/services-logo.svg" alt="">
-                <ul class="services-list">
-                    <li class="services-list-item">
-                        электромонтажные работы
-                    </li>
-                    <li class="services-list-item">
-                        сантехнические работы
-                    </li>
-                    <li class="services-list-item">
-                        укладка керамогранита
-                    </li>
-                    <li class="services-list-item">
-                        укладка напольных покрытий
-                    </li>
-                    <li class="services-list-item">
-                        санузел под ключ
-                    </li>
-                    <li class="services-list-item">
-                        штукатурно-малярные работы
-                    </li>
+                <hr class="horizontal-lines services-hr">
+
+              <!-- Не получилось обернуть маркированный список в div, разное расстояние между
+                текстом и маркерами. Желательно обернуть в div, для более удобной настройки отступов-->
+              <ul class="services-list">
+                  <li class="services-list-item">
+                      электромонтажные работы
+                  </li>
+                  <li class="services-list-item">
+                      сантехнические работы
+                  </li>
+                  <li class="services-list-item">
+                      укладка керамогранита
+                  </li>
+                </ul>
+                <ul class="services-list2">
+                  <li class="services-list-item">
+                      укладка напольных покрытий
+                  </li>
+                  <li class="services-list-item">
+                      санузел под ключ
+                  </li>
+                  <li class="services-list-item">
+                      штукатурно-малярные работы
+                  </li>
                 </ul>
                 <p class="services-text">
-                    С полным перечнем услуг можете ознакомиться <a href="#">по ссылке</a>
+                    С полным перечнем услуг можете ознакомиться <strong><a class="section-links"
+                      href="#">по ссылке</a><img class="click-mouse-img" src="./img/click mouse.svg" alt="#"></strong>
                 </p>
             </section>
             <!-- Section reviews end -->
 
+            <!-- Decoration -->
             <img src="/img/Rectangle 2.png" alt="">
 
+            <!-- Section price start -->
             <section class="price">
                 <h2 class="section-title price-title">
                     Прайс-лист
+                    <img class="blocks-img" src="/img/price.svg" alt="">
                 </h2>
-                <img src="/img/price.svg" alt="">
-                <hr>
+                <hr class="horizontal-lines price-hr">
                 <p class="price-text">
                     В документе, по ссылке ниже, представлен актуальный прайс-лист на наши услуги
                 </p>
                 <p class="price-text">
-                    С прайс-листом вы можете ознакомиться <a href="#">по ссылке</a>
+                    С прайс-листом вы можете ознакомиться <strong><a class="section-links"
+                      href="#">по ссылке</a><img class="click-mouse-img" src="./img/click mouse.svg" alt="#"></strong>
                 </p>
             </section>
           </main>
