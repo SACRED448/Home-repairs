@@ -49,24 +49,26 @@ a {
 }
 
 /* Из-за данной настройки, изображение растягивалось, а не изменялось при помощи слайдера */
-
 /* img {
 	max-width: 100%;
 } */
 
+/* overflow нужно было прописывать body, а не обёртке page */
 body {
   color: #000;
   font-weight: 400;
   line-height: 53.02px;
   letter-spacing: 3.2px;
-	height: 100%;
+  min-height: 100%;
+	height: 100vw;
+  overflow-x: hidden;
 	font-family: 'Roboto', 'segoescript', 'sans-serif';
 	background: #EBEEF6;
 }
 
-.main {
+/* .main {
 
-}
+} */
 
 .section-title {
   text-align: center;
@@ -112,12 +114,11 @@ button {
 }
 
 .container {
-	padding: 47px 0 0 40px;
+	padding: 47px 100px 0 40px;
 }
 
 .header-logo {
 	display: inline-block;
-  margin-right: 308px;
 }
 
 .header-logo-img {
@@ -125,18 +126,19 @@ button {
 }
 
 .header-nav {
-	display: inline-block;
+	display: inline-flex;
+  float: right;
 }
 
 .header-list {
-	display: flex;
-	position: relative;
-	top: -2.2em;
+	display: inline-flex;
+  text-align: center;
 	list-style-type: none;
 }
 
 .header-list-item {
 	position: relative;
+  top: 8px;
 	font-size: 20px;
 	font-weight: 400;
 }
@@ -162,12 +164,12 @@ button {
   align-items: center;
 }
 
-.our-works-title {
+/* .our-works-title {
 
-}
+} */
 
 .our-works-hr {
-  width: 550px;
+  width: 30%;
 }
 
 .our-works-list {
@@ -189,27 +191,21 @@ button {
   margin-right: 20px;
 }
 
-.our-works-item1-background {
+.our-works-item-left-background {
   transition: 1s;
   background: url('../img/img-of-repair.png');
   background-repeat: no-repeat;
   cursor: pointer;
 }
 
-.our-works-item1-background:hover {
+.our-works-item-left-background:hover {
   transform: scale(1.05);
 }
 
-.our-works-item2-background {
+.our-works-item-right-background {
   background: #F9F9F9;
   background-size: 100%;
 }
-
-/* .our-works-item3-background {
-  margin-bottom: 70px;
-  background: url('../img/work-before-after.png');
-  background-repeat: no-repeat;
-} */
 
 .our-works-item-wrapper {
   padding: 20px 24px 0 24px;
@@ -234,15 +230,15 @@ button {
   color: #2439F6;
 }
 
-.our-works-item-strong1 {
+.our-works-item-left-strong {
   text-indent: 0.3em;
 }
 
-.our-works-item-strong2 {
+.our-works-item-bottomleft-strong {
  text-indent: -1.4em;
 }
 
-.our-works-item-strong3 {
+.our-works-item-right-strong {
   text-indent: 0.3em;
 }
 
@@ -251,12 +247,8 @@ button {
   padding-bottom: 30px;
 }
 
-.our-works-item-descr2 {
+.our-works-item-right {
   text-indent: 2.8em;
-}
-
-.our-works-item-descr3 {
-  float: right;
 }
 
 .our-works-images {
@@ -302,7 +294,6 @@ button {
 }
 
 .our-works-purple-arrow-in-right {
-  /* display: block; */
   position: relative;
   padding: 0;
   left: 45em;
@@ -385,13 +376,13 @@ reviews-logo {
   margin-bottom: 300px;
 }
 
-.reviews-title {
+/* .reviews-title {
 
-}
+} */
 
-.reviews-text {
+/* .reviews-text {
 
-}
+} */
 
 .img-roller-right {
   display: block;
@@ -403,13 +394,13 @@ reviews-logo {
 
 /* Section user form start */
 
-.submit-your-application {
+/* .submit-your-application {
 
-}
+} */
 
-.submit-your-application-title {
+/* .submit-your-application-title {
 
-}
+} */
 
 .submit-your-application-hr {
   width: 660px;
@@ -486,7 +477,6 @@ reviews-logo {
   letter-spacing: 2.76px;
   font-size: 20px;
   transition: 0.8s;
-  /* border: none; */
   border: 3px solid #fff;
   cursor: pointer;
 }
@@ -501,13 +491,13 @@ reviews-logo {
   letter-spacing: 2.76px;
 }
 
-.services {
+/* .services {
 
-}
+} */
 
-.services-title {
+/* .services-title {
 
-}
+} */
 
 .services-hr {
   width: 18%;
@@ -531,9 +521,9 @@ reviews-logo {
   font-weight: 600;
 }
 
-.services-list-item {
+/* .services-list-item {
 
-}
+} */
 
 .services-text {
   text-align: center;
@@ -555,9 +545,9 @@ reviews-logo {
   margin-bottom: 200px;
 }
 
-.price-title {
+/* .price-title {
 
-}
+} */
 
 .price-hr {
   width: 25%;
@@ -613,3 +603,39 @@ reviews-logo {
   height: 50px;
 }
 
+
+/* Адаптивная вёрстка */
+@media screen and (max-width: 1700px) {
+  .header-logo {
+    width: 30%;
+  }
+  .header-list-item {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  /* Header styles */
+  .container {
+    padding-right: 50px;
+  }
+  .header {
+    background-size: calc(100%); /*Помогает адаптировать фон (сузить/расширить) на низких разрешениях*/
+    box-shadow: 1366px 4px 0px 0px rgba(0, 0, 0, 0.10) inset;
+    background-repeat: no-repeat;
+  }
+  .header-logo {
+    width: 28%;
+  }
+  .header-list-item {
+    top: -2px;
+    font-size: 17px;
+  }
+  .main-title {
+    top: 250px;
+    max-width: 500px;
+    font-size: 24px;
+  }
+  /* Our works styles */
+
+}
